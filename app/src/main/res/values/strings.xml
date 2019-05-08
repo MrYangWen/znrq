@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">巴中利民燃气</string>
+    <string name="app_name_es">巴中利民燃气</string>
+    <string name="tab_text_1">首页</string>
+    <string name="tab_text_2">订单</string>
+    <string name="tab_text_3">订单</string>
+    <string name="tab_text_4">我的</string>
+    <item name="tag_first" type="id" />
+</resources>

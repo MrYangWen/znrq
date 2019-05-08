@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/dl_bk"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:src="@mipmap/icon" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/shadow_10138"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:digits="0123456789"
+            android:drawableLeft="@mipmap/dl_ma"
+            android:drawablePadding="@dimen/margin_15"
+            android:gravity="center_vertical"
+            android:hint="请输入用户编号（如:1024）"
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="11"
+            android:padding="@dimen/margin_15"
+            android:textColor="@color/color_text_dark"
+            android:textColorHint="@color/color_text_dark"
+            android:textSize="@dimen/text_12" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#66999999" />
+
+        <EditText
+            android:id="@+id/et_psd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/dl_code"
+            android:drawablePadding="@dimen/margin_15"
+            android:gravity="center_vertical"
+            android:hint="请输入密码（用户登记身份证号码后6位）"
+            android:maxLength="11"
+            android:padding="@dimen/margin_15"
+            android:textColor="@color/color_text_dark"
+            android:textColorHint="@color/color_text_dark"
+            android:textSize="@dimen/text_12" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/iv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_30"
+        android:background="@drawable/shadow_101828"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="登录"
+        android:textColor="@color/color_text_dark"
+        android:textSize="@dimen/text_14" />
+</LinearLayout>

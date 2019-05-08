@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:gravity="center|top"
+			  android:background="@color/color_activity_bg"
+			  android:orientation="vertical">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@mipmap/me_bc">
+
+		<ImageView
+			android:id="@+id/img_head"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/margin_50"
+			android:src="@mipmap/me_head_mr"/>
+
+		<TextView
+			android:id="@+id/tv_dh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="@dimen/margin_20"
+			tools:text="18223360900"
+			android:textColor="@color/color_white"
+			android:textSize="@dimen/text_14"/>
+
+		<TextView
+			android:id="@+id/tv_cjwt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:drawableRight="@mipmap/back_small"
+			android:padding="@dimen/margin_15"
+			android:text="常见问题"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_14"/>
+	</FrameLayout>
+
+
+	<TextView
+		android:id="@+id/tv_gx"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_10"
+		android:background="@color/color_white"
+		android:drawableRight="@mipmap/back_small"
+		android:padding="@dimen/margin_15"
+		android:text="检查更新"
+		android:textColor="@color/color_text_dark"
+		android:textSize="@dimen/text_14"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/color_line"/>
+
+	<TextView
+		android:id="@+id/tv_gy"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/color_white"
+		android:drawableRight="@mipmap/back_small"
+		android:padding="@dimen/margin_15"
+		android:text="关于"
+		android:textColor="@color/color_text_dark"
+		android:textSize="@dimen/text_14"/>
+
+</LinearLayout>

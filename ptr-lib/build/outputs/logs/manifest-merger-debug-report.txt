@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:3:5-38
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:5:5-30
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:4:5-28
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+application
+ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml:7:5-20
+uses-sdk
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+		ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+		ADDED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml
+		INJECTED from D:\xm_rq\xm_rq\znrq\ptr-lib\AndroidManifest.xml

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/color_white"
+			  android:orientation="vertical">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/status_bar_height"
+		android:background="@color/color_white"/>
+
+	<com.cq.xm.znrq.view.TemplateTitle
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@color/color_white"
+		app:backImage="@mipmap/fanhui_heise"
+		app:canBack="true"
+		app:textcolor="@color/color_text_dark"
+		app:titleText="关于"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/color_line"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/logo"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/margin_40"
+			android:src="@mipmap/icon"/>
+
+		<TextView
+			android:id="@+id/tv_version"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/logo"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/margin_20"
+			android:text="v1.0"
+			android:textColor="@color/color_blue"/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/color_line"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/selector_button_click_bg"
+			android:orientation="horizontal"
+			android:padding="@dimen/margin_15">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="公司名称"
+				android:textColor="@color/color_text_normal"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="重庆卓新科技有限公司"
+				android:textColor="@color/color_text_normal"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginBottom="@dimen/margin_5"
+			android:layout_marginTop="@dimen/margin_5"
+			android:background="@color/color_line"/>
+
+		<LinearLayout
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="@dimen/margin_15">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="公司网址"
+				android:textColor="@color/color_text_normal"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="http://www.cqsemay.com/"
+				android:textColor="@color/color_text_normal"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/color_line"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:lineSpacingExtra="@dimen/margin_3"
+		android:gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="@dimen/margin_15"
+		android:text="copyright©2017\n重庆卓新科技有限公司"
+		android:textColor="@color/color_text_light"
+		android:textSize="@dimen/text_12"/>
+</LinearLayout>

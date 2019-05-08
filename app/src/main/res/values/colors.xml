@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+
+
+	<color name="color_white">#ffffff</color>
+	<color name="color_black">#000000</color>
+	<color name="color_red">#ca0215</color>
+	<color name="color_red_mine">#f76c71</color>
+	<color name="color_red2">#b93c3b</color>
+	<color name="color_red3">#CD0000</color>
+	<color name="color_red4">#c00</color>
+	<color name="color_line">#f0f0f0</color>
+	<color name="color_tab">#f5f5f5</color>
+	<color name="color_line_light">#7fdddddd</color>
+	<color name="color_dust">#8c5f02</color>
+	<color name="color_activity_bg">#FFF4F4F4</color>
+	<color name="color_timmer">#ffff9962</color>
+	<color name="color_y">#d4a667</color>
+	<color name="color_blue">#397fff</color>
+	<color name="color_gray">#f6f6f6</color>
+	<color name="color_ripple">#5fFCFCFC</color>
+	<color name="color_button_clicked">#5fe0e0e0</color>
+	<color name="color_transparent">#00000000</color>
+	<color name="color_transparent_3e">#3e000000</color>
+	<color name="color_transparent_9f">#9f000000</color>
+	<color name="color_button_gray">#e1cccccc</color>
+
+
+	<!--商家端颜色值-->
+	<color name="color_sy_top">#209dfc</color>
+	<color name="color_black_trans">#26000000</color>
+	<color name="color_white_text_alpha">#99ffffff</color>
+	<color name="color_blue_q">#08b2f3</color>
+
+
+	<!--文字的颜色-->
+	<color name="color_text_dark">#333333</color>
+	<color name="color_text_normal">#666666</color>
+	<color name="color_text_light">#999999</color>
+	<color name="color_text_white">#ffffff</color>
+	<color name="tab_text_normal_color">#b5b5b5</color>
+	<color name="tab_text_selected_color">#333333</color>
+
+	<color name="color_menu_back">#F3F2F2</color>
+
+	<!--筛选控件-->
+	<color name="expand_tab_popview_item_press_color">#f4f4f4</color>
+
+	<!--购物车菜单-->
+	<color name="color_shopping_muen">#eeeeee</color>
+	<color name="color_muen">#f8f8f8</color>
+
+
+</resources>
