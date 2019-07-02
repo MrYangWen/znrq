@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cq.xm.znrq">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <application
+        android:name="com.cq.xm.znrq.XApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/appTheme">
+        <activity
+            android:name=".ui.activity.LoginAct"
+            android:configChanges="screenSize|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.TabAct"
+            android:label="首页" />
+        <activity
+            android:name=".ui.activity.UrlSettingAct"
+            android:label="充值" />
+        <activity
+            android:name=".ui.activity.AddMoneyAct"
+            android:label="充值" />
+        <activity
+            android:name=".ui.activity.PayOrderAct"
+            android:label="支付订单" />
+        <activity
+            android:name=".ui.activity.OrderDetailAct"
+            android:label="用户远程充值" />
+        <activity
+            android:name=".service.BluetoothListAct"
+            android:label="蓝牙列表" />
+        <activity
+            android:name=".ui.activity.WriteCardAct"
+            android:label="蓝牙写卡" />
+        <activity
+            android:name=".ui.activity.RecordListAct"
+            android:label="用气信息" />
+        <activity
+            android:name=".ui.activity.RecordDetailAct"
+            android:label="用气详情" />
+        <activity
+            android:name=".ui.activity.RepairAct"
+            android:label="维护" />
+        <activity
+            android:name=".ui.activity.QuestionAct"
+            android:label="常见问题" />
+        <activity
+            android:name=".ui.activity.AboutUsAct"
+            android:label="关于" />
+        <activity
+            android:name=".ui.activity.adminRepairAct"
+            android:label="安全检修" />
+        <activity android:name=".ui.activity.SimpleCaptureActivity" />
+
+        <!--第三支付回调-->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <service android:name=".service.BtXiMeiService" />
+
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen" />
+
+        <activity android:name="io.github.xudaojie.qrcodelib.CaptureActivity" />
+
+
+        <activity android:name="com.icbc.pay.PayResultHandler">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.icbc.pay.PayResultHandler.SHOW_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <service android:name="com.icbc.paysdk.ICBCAPI" />
+
+        <activity
+            android:name="com.icbc.paysdk.webview.PayWebView"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:gravity="center|top"
+			  android:orientation="vertical">
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/status_bar_height"
+		android:background="@color/color_white"/>
+
+	<com.cq.xm.znrq.view.TemplateTitle
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@color/color_white"
+		app:backImage="@mipmap/fanhui_heise"
+		app:canBack="true"
+		app:textcolor="@color/color_text_dark"
+		app:titleText="充值成功"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginBottom="@dimen/margin_30"
+		android:background="@color/color_line"/>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_margin="@dimen/margin_20"
+		android:background="@mipmap/czcg_bc"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:paddingTop="100dp">
+
+
+		<!--<TextView-->
+		<!--android:id="@+id/tv_total"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_marginTop="@dimen/margin_20"-->
+		<!--android:text="累计气量:51898"-->
+		<!--android:textColor="@color/color_text_dark"-->
+		<!--android:textSize="@dimen/text_14"/>-->
+
+		<!--<TextView-->
+		<!--android:id="@+id/tv_surplus"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_marginTop="@dimen/margin_10"-->
+		<!--android:text="剩余气量:34平方"-->
+		<!--android:textColor="@color/color_text_dark"-->
+		<!--android:textSize="@dimen/text_14"/>-->
+
+		<!--<TextView-->
+		<!--android:id="@+id/tv_unit"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_marginTop="@dimen/margin_10"-->
+		<!--android:text="计费阶数:20        "-->
+		<!--android:textColor="@color/color_text_dark"-->
+		<!--android:textSize="@dimen/text_14"/>-->
+
+		<!--<TextView-->
+		<!--android:id="@+id/tv_state"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_marginTop="@dimen/margin_20"-->
+		<!--android:text="阀门状态:开        "-->
+		<!--android:textColor="@color/color_text_dark"-->
+		<!--android:textSize="@dimen/text_14"/>-->
+
+		<!--<TextView-->
+		<!--android:id="@+id/tv_break"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_marginTop="@dimen/margin_10"-->
+		<!--android:text="故障状态:无故障"-->
+		<!--android:textColor="@color/color_text_dark"-->
+		<!--android:textSize="@dimen/text_14"/>-->
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin_20"
+			android:layout_marginTop="@dimen/margin_10"
+			android:gravity="center"
+			android:text="请注意用气安全，长时间不用气，请将表前总阀关闭。"
+			android:textColor="@color/color_red"
+			android:textSize="@dimen/text_18"/>
+
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/iv_close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_15"
+		android:src="@mipmap/czcg_delete"/>
+
+</LinearLayout>

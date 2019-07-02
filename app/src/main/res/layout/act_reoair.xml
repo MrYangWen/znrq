@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_activity_bg"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:background="@color/color_white" />
+
+    <com.cq.xm.znrq.view.TemplateTitle
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/color_white"
+        app:backImage="@mipmap/fanhui_heise"
+        app:canBack="true"
+        app:textcolor="@color/color_text_dark"
+        app:titleText="维护" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_kf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableTop="@mipmap/wh_kf"
+                android:gravity="center"
+                android:text="开阀"
+                android:textColor="@color/color_text_dark" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:layout_marginRight="@dimen/margin_50"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/color_line" />
+
+
+            <TextView
+                android:id="@+id/tv_gf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/wh_gf"
+                android:gravity="center"
+                android:text="关阀"
+                android:textColor="@color/color_text_dark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:layout_marginRight="@dimen/margin_50"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/color_line" />
+
+
+            <ImageView
+                android:id="@+id/tv_aqjx"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@mipmap/jianxiu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:text="安全检修"
+                android:textColor="@color/color_text_dark" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

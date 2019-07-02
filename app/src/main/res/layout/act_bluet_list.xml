@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/status_bar_height"
+		android:background="@color/color_white"/>
+
+	<com.cq.xm.znrq.view.TemplateTitle
+		android:id="@+id/tv_title"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@color/color_white"
+		app:backImage="@mipmap/fanhui_heise"
+		app:canBack="true"
+		app:textcolor="@color/color_text_dark"
+		app:titleText="蓝牙列表"/>
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/color_line"/>
+
+	<ListView
+		android:dividerHeight="1px"
+		android:id="@+id/lv_list"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1.0"
+		android:divider="@color/color_text_normal"
+		android:scrollingCache="false"/>
+
+	<Button
+		android:id="@+id/start_seach"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="开始搜索"/>
+</LinearLayout>

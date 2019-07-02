@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:padding="@dimen/margin_15">
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<TextView
+			android:textStyle="bold"
+			android:id="@+id/tv_time"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="抄表时间：2017年8月"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12"/>
+
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_marginTop="@dimen/margin_5"
+		android:id="@+id/tv_qbbh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="气表编号: 50 nM3"
+		android:textColor="@color/color_text_dark"
+		android:textSize="@dimen/text_12"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginBottom="@dimen/margin_5"
+		android:layout_marginTop="@dimen/margin_5"/>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/tv_syql"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="剩余气量: 50 nM3"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12"/>
+
+		<TextView
+			android:id="@+id/tv_ljql"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="累计气量: 50 nM3"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12" />
+
+		<TextView
+			android:id="@+id/tv_gqcs"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="购气次数: 50 nM3"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/tv_syje"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="剩余金额: 50 nM3"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12"/>
+
+		<TextView
+			android:id="@+id/tv_ljje"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="累计金额: 50 nM3"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12" />
+		<TextView
+			android:id="@+id/tv_null"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="											 	 "
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_10">
+
+
+		<TextView
+			android:id="@+id/tv_fmzt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="阀门状态: 50 nM3"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12"/>
+
+
+		<TextView
+			android:id="@+id/tv_xhqd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="网络信号强度:"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12"/>
+
+
+		<TextView
+			android:id="@+id/tv_js"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:text="当前阶数: 50 nM3"
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_12" />
+
+	</LinearLayout>
+
+
+</LinearLayout>

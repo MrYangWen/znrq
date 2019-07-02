@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'znrq'
+            keyPassword 'xm1212'
+            storeFile file('C:/Users/Administrator/Documents/znrq-master/znrq-master/app/znrq.jks')
+            storePassword 'xm1212'
+        }
+        debug {
+            keyAlias 'znrq'
+            keyPassword 'xm1212'
+            storeFile file('C:/Users/Administrator/Documents/znrq-master/znrq-master/app/znrq.jks')
+            storePassword 'xm1212'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME: applicationId,
+//                JPUSH_APPKEY : "5e56172caae52049957d4400", //JPush上注册的包名对应的appkey.
+//                JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+//        ]
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.test:runner:0.5'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    //RxJava
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    //retrofit 网络请求retrofit2
+    testImplementation 'com.android.support:multidex:1.0.3'
+    //    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    //hongyang大神的万能适配器，针对recyclerViewd使用  https://github.com/hongyangAndroid/baseAdapter
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+    implementation 'com.zhy:base-adapter:3.0.3'
+    //注解框架
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    //权限管理
+    implementation 'pub.devrel:easypermissions:0.3.0'
+    //仿微信图片选择器
+    implementation 'com.lzy.widget:imagepicker:0.5.0'
+    //指定版本
+    //谷歌图片加载
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation project(':ptr-lib')
+    implementation 'com.alibaba:fastjson:1.2.28.odps'
+    //上下滑动查看图片控件
+    implementation 'com.github.stfalcon:frescoimageviewer:0.4.1'
+    implementation 'com.facebook.fresco:fresco:0.13.0'
+    //阿里云oss云存储
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.3.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.0@aar'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.qianwen:update-app:3.2.2'
+    implementation 'com.qianwen:okhttp-utils:3.8.0'
+    //bugly
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation project(':qrcode-lib')
+    implementation files('libs/ICBCPaySDK-V1.3-proguard.jar')
+}
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 顶部导航栏TemplateTitle标题模板自定义属性 -->
+    <declare-styleable name="TemplateTitle">
+        <!--类型-->
+        <attr name="android:inputType" />
+        <attr name="textWidth" format="integer" />
+        <attr name="textcolor" format="color" />
+        <!--返回图标-->
+        <attr name="backImage" format="reference" />
+        <!-- 标题文案 -->
+        <attr name="titleText" format="string" />
+        <!-- 是否有back按钮 -->
+        <attr name="canBack" format="boolean" />
+        <!-- back按钮文案 -->
+        <attr name="backText" format="string" />
+        <!-- 右侧更多功能按钮图片 -->
+        <attr name="moreImg" format="reference" />
+        <!-- 右侧更多功能按钮文字 -->
+        <attr name="moreText" format="string" />
+    </declare-styleable>
+
+    <!--圆形图片显示组件-->
+    <attr name="borderRadius" format="dimension" />
+
+    <attr name="Type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="Type" />
+    </declare-styleable>
+
+
+    <!--日历-->
+    <attr name="cbd_calendar_row" format="integer" />
+
+    <declare-styleable name="CalendarDateView">
+        <attr name="cbd_calendar_row" />
+    </declare-styleable>
+
+</resources>

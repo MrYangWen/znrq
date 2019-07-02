@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/color_activity_bg"
+			  android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<com.bigkoo.convenientbanner.ConvenientBanner
+				android:id="@+id/cb_banner"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:background="@color/color_white"/>
+
+			<com.cq.xm.znrq.view.NoScrollGridView
+				android:id="@+id/gv"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/color_white"
+				android:numColumns="3"
+				android:paddingBottom="@dimen/margin_10"
+				android:paddingTop="@dimen/margin_10"
+				android:scrollbars="none"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/color_line"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/color_white"
+				android:gravity="center_vertical"
+				android:padding="@dimen/margin_10">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="@dimen/margin_10"
+					android:src="@mipmap/home_ad_icon"/>
+
+				<View
+					android:layout_width="1px"
+					android:layout_height="match_parent"
+					android:background="@color/color_line"/>
+
+				<TextView
+					android:id="@+id/tv_ad"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/margin_10"
+					android:layout_weight="1"
+					android:drawableLeft="@mipmap/home_ad_icon2"
+					android:drawablePadding="@dimen/margin_3"
+					android:drawableRight="@mipmap/back_small"
+					android:ellipsize="end"
+					android:gravity="center_vertical"
+					android:text="中国燃气运营与安全研讨会与人员"
+					android:textColor="@color/color_text_normal"
+					android:textSize="@dimen/text_14"/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

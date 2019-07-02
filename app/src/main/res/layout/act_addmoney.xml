@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/color_activity_bg"
+			  android:orientation="vertical">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/status_bar_height"
+		android:background="@color/color_white"/>
+
+	<com.cq.xm.znrq.view.TemplateTitle
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:background="@color/color_white"
+		app:backImage="@mipmap/fanhui_heise"
+		app:canBack="true"
+		app:textcolor="@color/color_text_dark"
+		app:titleText="充值"/>
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/color_line"/>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin_15"
+		android:layout_marginRight="@dimen/margin_15"
+		android:layout_marginTop="@dimen/margin_20"
+		android:background="@mipmap/cz_bj_s"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/margin_50"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/margin_10"
+				android:gravity="left"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="用户编号: "
+					android:textColor="@color/color_text_normal"
+					android:textSize="@dimen/text_14"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin_30"
+					android:text="户        名: "
+					android:textColor="@color/color_text_normal"
+					android:textSize="@dimen/text_14"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin_30"
+					android:text="用气性质: "
+					android:textColor="@color/color_text_normal"
+					android:textSize="@dimen/text_14"/>
+
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/margin_10"
+				android:gravity="left"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/tv_hh"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:text="5001131822456"
+					android:textColor="@color/color_text_dark"
+					android:textSize="@dimen/text_14"
+					android:textStyle="bold"/>
+
+				<TextView
+					android:id="@+id/tv_hm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin_30"
+					android:text="大鹏"
+					android:textColor="@color/color_text_dark"
+					android:textSize="@dimen/text_14"
+					android:textStyle="bold"/>
+
+				<TextView
+					android:id="@+id/tv_xz"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin_30"
+					android:text="非居民用气"
+					android:textColor="@color/color_text_dark"
+					android:textSize="@dimen/text_14"
+					android:textStyle="bold"/>
+
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin_15"
+		android:layout_marginRight="@dimen/margin_15"
+		android:background="@mipmap/cz_bj_x"
+		android:gravity="top"
+		android:orientation="horizontal"
+		android:paddingTop="@dimen/margin_30">
+
+
+		<TextView
+			android:id="@+id/tv_xy_money"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="90dp"
+			android:text="充  值  量:     "
+			android:textColor="@color/color_text_dark"
+			android:textSize="@dimen/text_14"
+			android:textStyle="bold"/>
+
+		<EditText
+			android:id="@+id/et_money"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:digits="1234567890."
+			android:hint="购买数量"
+			android:inputType="numberDecimal"
+			android:maxLength="20"
+			android:padding="15dp"
+			android:textColor="@color/color_text_dark"
+			android:textColorHint="@color/color_text_dark"
+			android:textSize="@dimen/text_14"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tv_cz"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="@dimen/margin_30"
+		android:background="@drawable/shadow_103610"
+		android:gravity="center"
+		android:padding="10dp"
+		android:text="充值"
+		android:textColor="@color/color_white"
+		android:textSize="@dimen/text_14"/>
+</LinearLayout>
